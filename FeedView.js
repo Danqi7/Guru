@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 25,
     marginTop: 7,
-    marginLeft: 15,
+    marginLeft: 10,
   },
   icon: {
     width: 20,
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   searchBar: {
     flexDirection: 'row',
     height: 25,
-    width: 330,
+    width: 300,
     backgroundColor: "#4B77BE",
     marginLeft: 15,
     marginTop: 4,
