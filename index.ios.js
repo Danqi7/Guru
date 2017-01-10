@@ -14,7 +14,7 @@ import {
   Linking
 } from 'react-native';
 
-// import LoginPage from './LoginPage';
+import LoginPage from './LoginPage';
 import HomePage from './HomePage';
 import LoadingPage from './LoadingPage';
 
@@ -33,7 +33,7 @@ class Guru extends Component {
       fetched: false,
       user: null,
     };
-     AsyncStorage.setItem("id", "8Vc4ZVe-ej");
+     AsyncStorage.setItem("id", "");
     // get user by userID from db
     AsyncStorage.getItem("id", (err, result) => {
       if (err || !result) {
@@ -86,7 +86,7 @@ class Guru extends Component {
            }
            const page = this.state.user ?
              <HomePage user={this.state.user} showModal={false} />
-             : <LoadingPage />
+             : <LoginPage />
             return page;
 
          }}
